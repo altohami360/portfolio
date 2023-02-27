@@ -13,12 +13,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
     <style>
         * {
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
         }
     </style>
 
@@ -26,10 +27,10 @@
 </head>
 
 <body class="bg-gray-900 p-5">
-    <div class="w-full h-screen border border-dashed border-4 border-yellow-500 rounded py-4 px-6">
-        <span class="text-green-500">DEVELOPER</span>
-        <span class="text-yellow-500">@@back-end</span>
-        <span class="text-white">:$ ~</span>
+    <div class="w-full min:h-screen h-auto border border-dashed border-4 border-yellow-500 rounded py-4 px-6">
+        <span class="lg:text-base text-sm text-green-500">BACK-END</span>
+        <span class="lg:text-base text-sm text-yellow-500">@@dev</span>
+        <span class="lg:text-base text-sm text-white">:$ ~</span>
         {{-- <h2 class="text-white text-5xl">Mohammed Altohami</h2> --}}
         <div>
             <figure class="w-full my-4">
@@ -37,25 +38,25 @@
                     alt="image description">
             </figure>
         </div>
-        <p class="text-white text-md px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+        <p class="text-white lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
             A talented software developer with experience in developing backend using Html, CSS, PHP, MySql,
             Laravel, and other. for strong problem-solving skills, Self-study, and time management. graduated from the
             Faculty of Computer Science Department of Information and Communications Technology (ICT) with a very good
             grad
         </p>
 
-        <br>
-
-        <span class="text-green-500">DEVELOPER</span>
-        <span class="text-yellow-500">@@back-end</span>
-        <span class="text-white">:$ </span>
-        <span class="text-red-500 tracking-widest">altohami/skills</span>
+        <div class="py-4">
+            <span class="lg:text-base text-sm text-green-500">BACK-END</span>
+            <span class="lg:text-base text-sm text-yellow-500">@@dev</span>
+            <span class="lg:text-base text-sm text-white">:$ </span>
+            <span class="lg:text-base text-sm text-red-500 tracking-widest">altohami/skills</span>
+        </div>
         <ul class="px-4 text-white">
-            <li class="tracking-widest"><span class="text-green-500 pr-1">✔</span> laravel</li>
-            <li class="tracking-widest"><span class="text-green-500 pr-1">✔</span> data bases</li>
-            <li class="tracking-widest"><span class="text-green-500 pr-1">✔</span> sql</li>
-            <li class="tracking-widest"><span class="text-green-500 pr-1">✔</span> php</li>
-            <li class="tracking-widest"><span class="text-green-500 pr-1">✔</span> hosting</li>
+            <li class="tracking-widest lg:text-base text-sm "><span class="text-green-500 pr-1">✔</span> laravel</li>
+            <li class="tracking-widest lg:text-base text-sm "><span class="text-green-500 pr-1">✔</span> data bases</li>
+            <li class="tracking-widest lg:text-base text-sm "><span class="text-green-500 pr-1">✔</span> sql</li>
+            <li class="tracking-widest lg:text-base text-sm "><span class="text-green-500 pr-1">✔</span> php</li>
+            <li class="tracking-widest lg:text-base text-sm "><span class="text-green-500 pr-1">✔</span> hosting</li>
             <li class="tracking-widest">
                 <div role="status">
                     <svg aria-hidden="true"
@@ -72,6 +73,75 @@
                 </div>
             </li>
         </ul>
+
+
+        <div class="py-4">
+            <span class="lg:text-base text-sm text-green-500">BACK-END</span>
+            <span class="lg:text-base text-sm text-yellow-500">@@dev</span>
+            <span class="lg:text-base text-sm text-white">:$ </span>
+            <span class="lg:text-base text-sm text-red-500 tracking-widest">altohami/education</span>
+        </div>
+        <p class="text-white lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+            University of Science and Technology
+        </p>
+        <span
+            class="text-gray-400 lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+            ⇒ Computer Science - Information and Communication Technology
+        </span>
+
+
+
+        <div class="py-4">
+            <span class="lg:text-base text-sm text-green-500">BACK-END</span>
+            <span class="lg:text-base text-sm text-yellow-500">@@dev</span>
+            <span class="lg:text-base text-sm text-white">:$ </span>
+            <span class="lg:text-base text-sm text-red-500 tracking-widest">altohami/experience</span>
+        </div>
+
+        <div class="px-6 ">
+            <span class="text-blue-400 text-sm ">2021/3/1 --------------------------</span>
+            {{-- <span class="text-gray-400 pr-4">↳</span> --}}
+            <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                <span class="uppercase font-semibold">Developer</span>
+                <span
+                    class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                    ⇒ University of Science and Technology
+                </span>
+                <br>
+                {{-- <p class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full"> --}}
+                Participated in developing the academic system
+                of the University of Science & Technology, Adding
+                new updates to the system which resulted
+                in facilitating the user experience.
+                {{-- </p> --}}
+            </p>
+
+            <div class="overflow-hidden">
+                <span class="text-blue-400 text-sm ">2021/8/1 --------------------------</span>
+            </div>
+        </div>
+        <div class="px-6 ">
+            <span class="text-blue-400 text-sm ">2021/3/1 --------------------------</span>
+            {{-- <span class="text-gray-400 pr-4">↳</span> --}}
+            <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                <span class="uppercase font-semibold">Developer</span>
+                <span
+                    class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                    ⇒ University of Science and Technology
+                </span>
+                <br>
+                {{-- <p class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full"> --}}
+                Participated in developing the academic system
+                of the University of Science & Technology, Adding
+                new updates to the system which resulted
+                in facilitating the user experience.
+                {{-- </p> --}}
+            </p>
+
+            <div class="overflow-hidden">
+                <span class="text-blue-400 text-sm ">2021/8/1 --------------------------</span>
+            </div>
+        </div>
     </div>
 </body>
 
