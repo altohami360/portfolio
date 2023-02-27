@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.master')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-    <style>
-        * {
-            font-family: 'Ubuntu Mono', monospace;
-        }
-    </style>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-gray-900 p-5">
+@section('content')
     <div class="w-full min:h-screen h-auto border border-dashed border-4 border-yellow-500 rounded py-4 px-6">
         <span class="lg:text-base text-sm text-green-500">BACK-END</span>
         <span class="lg:text-base text-sm text-yellow-500">@@dev</span>
@@ -84,8 +58,7 @@
         <p class="text-white lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
             University of Science and Technology
         </p>
-        <span
-            class="text-gray-400 lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+        <span class="text-gray-400 lg:text-base text-sm  px-6 tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
             ⇒ Computer Science - Information and Communication Technology
         </span>
 
@@ -103,8 +76,7 @@
             {{-- <span class="text-gray-400 pr-4">↳</span> --}}
             <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
                 <span class="uppercase font-semibold">Developer</span>
-                <span
-                    class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                <span class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
                     ⇒ University of Science and Technology
                 </span>
                 <br>
@@ -125,8 +97,7 @@
             {{-- <span class="text-gray-400 pr-4">↳</span> --}}
             <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
                 <span class="uppercase font-semibold">Developer</span>
-                <span
-                    class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+                <span class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
                     ⇒ University of Science and Technology
                 </span>
                 <br>
@@ -143,6 +114,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+@endsection
