@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'welcome']);
+Route::get('/', [HomeController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
 
