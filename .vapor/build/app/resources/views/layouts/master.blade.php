@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta property='og:title' content='altohami' />
-    <meta property='og:image' content='https://i.ibb.co/y6FQtbz/Whats-App-Image-2023-02-13-at-11-04-02-AM.jpg' />
-    <meta property='og:description' content='Mohammed Altohami Back-end Developer' />
-    <meta property='og:url' content='URL OF YOUR WEBSITE' />
-    <meta property='og:image:width' content='500' />
-    <meta property='og:image:height' content='600' />
-
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <link rel="icon" href="{{ asset('favicon.ico') }}">
