@@ -4,8 +4,15 @@
     <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
         <x-portfolio.path>altohami</x-portfolio.path>
         <x-portfolio.about :image="asset('storage\logo.png')">
-            {{ $about }}
+            {{ $user->about }}
         </x-portfolio.about>
+
+        @foreach ($user->education as $item)
+            <x-portfolio.path>altohami/education</x-portfolio.path>
+            <x-portfolio.education :school="$item->school">
+                {{ $item->collage }} - {{ $item->department }}
+            </x-portfolio.education>
+        @endforeach
 
         <x-portfolio.path>altohami/skills</x-portfolio.path>
         <x-portfolio.skills>
@@ -13,11 +20,6 @@
                 <x-portfolio.skills-item>{{ $item }}</x-portfolio.skills-item>
             @endforeach
         </x-portfolio.skills>
-
-        <x-portfolio.path>altohami/education</x-portfolio.path>
-        <x-portfolio.education :school="$education['school']">
-            {{ $education['college'] }}
-        </x-portfolio.education>
 
         <x-portfolio.path>altohami/experience</x-portfolio.path>
         <x-portfolio.experience title="Developer" company="University of Science and Technology" start-date="2021/3/1"
