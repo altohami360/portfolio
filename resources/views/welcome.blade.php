@@ -22,6 +22,10 @@
         </x-portfolio.skills>
 
         <x-portfolio.path>altohami/experience</x-portfolio.path>
+        <x-portfolio.experience title="Laravel Developer" company="Aljamei Alkhayri Al'ilikturuni Litahfiz Alquran Alkarim" start-date="2021/3/1"
+            end-date="*">
+            laravel developer and other tasks
+        </x-portfolio.experience>
         <x-portfolio.experience title="Developer" company="University of Science and Technology" start-date="2021/3/1"
             end-date="2021/8/1">
             Participated in developing the academic system
@@ -36,6 +40,7 @@
 
         <x-portfolio.path>altohami/contact</x-portfolio.path>
         <x-portfolio.contact title="Email">altohami360@gmail.com</x-portfolio.contact>
+        <x-portfolio.contact title="Linkedin">https://linkedin.com/in/altohami360</x-portfolio.contact>
 
         <x-portfolio.path class="animate-ping"> | </x-portfolio.path>
     </div>
