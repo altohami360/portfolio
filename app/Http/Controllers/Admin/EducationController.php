@@ -22,7 +22,9 @@ class EducationController extends Controller
 
     public function store(StoreEducationRequest $request)
     {
-        $user = Auth::user();
+        $user = User::where('email', 'altohami360@gmail.com')->first();
+
+        // $user = Auth::user();
 
         $user->education()->create($request->validated());
 
