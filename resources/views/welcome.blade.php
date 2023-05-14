@@ -22,8 +22,8 @@
         </x-portfolio.skills>
 
         <x-portfolio.path>altohami/experience</x-portfolio.path>
-        <x-portfolio.experience title="Laravel Developer" company="Aljamei Alkhayri Al'ilikturuni Litahfiz Alquran Alkarim" start-date="2021/3/1"
-            end-date="*">
+        <x-portfolio.experience title="Laravel Developer" company="Aljamei Alkhayri Al'ilikturuni Litahfiz Alquran Alkarim"
+            start-date="2021/3/1" end-date="*">
             laravel developer and other tasks
         </x-portfolio.experience>
         <x-portfolio.experience title="Developer" company="University of Science and Technology" start-date="2021/3/1"

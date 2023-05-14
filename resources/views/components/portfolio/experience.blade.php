@@ -1,9 +1,14 @@
-<div>
-    <div class="px-6 py-2">
-        <span class="text-blue-400 text-sm ">{{ $startDate }} ------------------------</span>
-        <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+    <div class="px-6 py-2 lg:w-1/2 md:w-2/3 sm:w-full">
+
+        <div class="flex">
+            <span class="text-blue-400 text-sm">{{ $startDate }}</span>
+            <span class="border-t border-dashed border-blue-400 mt-3 mx-4 flex-grow"></span>
+        </div>
+
+        {{-- <span class="text-blue-400 text-sm ">{{ $startDate }} ------------------------</span> --}}
+        <p class="text-white lg:text-base text-sm tracking-widest leading-7 text-justify w-full">
             <span class="uppercase font-semibold">{{ $title }}</span>
-            <span class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify lg:w-1/2 sm:w-full">
+            <span class="text-gray-400 lg:text-base text-sm tracking-widest leading-7 text-justify w-full">
                 ⇒ {{ $company }}
             </span>
             <br>
@@ -13,7 +18,7 @@
         <div class="overflow-hidden">
             @if ($endDate == '*')
                 {{-- <span class="text-blue-400 text-sm "><span class="text-green-500">currently working in this role -<span class="animate-ping delay-100">-</span></span> </span> --}}
-                <div role="status ">
+                <div role="status flex">
                     <svg aria-hidden="true"
                         class="inline w-4 h-4 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-400"
                         viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,12 +30,16 @@
                             fill="currentFill" />
                     </svg>
                     <span class="text-blue-400">
-                        currently working ------<span class="animate-ping">-</span>
+                        currently working
+                        {{-- <span class="animate-ping">-</span> --}}
                     </span>
+                    <span class="border-t border-dashed border-blue-400 mt-3 mx-6 flex-grow"></span>
                 </div>
             @else
-                <span class="text-blue-400 text-sm ">{{ $endDate }} ------------------------</span>
+                <div class="flex">
+                    <span class="text-blue-400 text-sm">{{ $endDate }}</span>
+                    <span class="border-t border-dashed border-blue-400 mt-3 mx-6 flex-grow"></span>
+                </div>
             @endif
         </div>
     </div>
-</div>
