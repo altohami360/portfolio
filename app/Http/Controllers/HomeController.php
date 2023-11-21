@@ -11,8 +11,7 @@ class HomeController extends Controller
     {
         $user = User::with('education')->first();
         // dd($user);
-        $skills = ['Web Development', 'DataBase', 'PHP', 'SQL', 'RESTfull API', 'laravel'];
-        // $education = User::with('education')->first();
+        $skills = ['Web Development', 'laravel', 'PHP', 'Databases (MySql)', 'RESTfull API'];
         return view('welcome', compact('user', 'skills'));
     }
 }

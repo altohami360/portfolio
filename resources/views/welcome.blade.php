@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
-        <x-portfolio.path>altohami</x-portfolio.path>
+        <x-portfolio.path>altohami/about</x-portfolio.path>
         <x-portfolio.about :image="asset('logo.png')">
             {{ $user->about }}
         </x-portfolio.about>
 
         @foreach ($user->education as $item)
             <x-portfolio.path>altohami/education</x-portfolio.path>
-            <x-portfolio.education :school="$item->school">
+            <x-portfolio.education :school="$item->school" :start="$item->start_at" :end="$item->end_at">
                 {{ $item->collage }} - {{ $item->department }}
             </x-portfolio.education>
         @endforeach
@@ -21,6 +21,7 @@
             @endforeach
         </x-portfolio.skills>
 
+        {{-- <x-portfolio.path>cd altohami/experience</x-portfolio.path> --}}
         <x-portfolio.path>altohami/experience</x-portfolio.path>
         <x-portfolio.experience title="Laravel Developer" company="الجمعية الخيرية الإلكترونية لتحفيظ القرآن الكريم"
             start-date="2021/3/1" end-date="*">
