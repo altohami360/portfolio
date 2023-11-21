@@ -3,7 +3,7 @@
 @section('content')
     <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
         <x-portfolio.path>altohami</x-portfolio.path>
-        <x-portfolio.about :image="asset('storage\logo.png')">
+        <x-portfolio.about :image="asset('logo.png')">
             {{ $user->about }}
         </x-portfolio.about>
 
@@ -22,7 +22,7 @@
         </x-portfolio.skills>
 
         <x-portfolio.path>altohami/experience</x-portfolio.path>
-        <x-portfolio.experience title="Laravel Developer" company="Aljamei Alkhayri Al'ilikturuni Litahfiz Alquran Alkarim"
+        <x-portfolio.experience title="Laravel Developer" company="الجمعية الخيرية الإلكترونية لتحفيظ القرآن الكريم"
             start-date="2021/3/1" end-date="*">
             laravel developer and other tasks
         </x-portfolio.experience>
