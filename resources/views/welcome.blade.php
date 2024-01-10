@@ -39,7 +39,7 @@
                         Mo Altohami
                     </h1>
                     <h3 class="tracking-wider text-gray-300 text-xs sm:text-xs md:text-base lg:text-xl">
-                        Software Enginner <br><span>(Laravel Framwork)</span>
+                        Software Engineer <br><span>(Laravel Framwork)</span>
                     </h3>
                 </div>
                 <div class=" border border-white bg-gray-900"></div>
