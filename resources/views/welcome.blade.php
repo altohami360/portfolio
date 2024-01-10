@@ -1,48 +1,68 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
 
-@section('content')
-    <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
-        <x-portfolio.path>altohami/about</x-portfolio.path>
-        <x-portfolio.about :image="asset('logo.png')">
-            {{ $user->about }}
-        </x-portfolio.about>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @foreach ($user->education as $item)
-            <x-portfolio.path>altohami/education</x-portfolio.path>
-            <x-portfolio.education :school="$item->school" :start="$item->start_at" :end="$item->end_at">
-                {{ $item->collage }} - {{ $item->department }}
-            </x-portfolio.education>
-        @endforeach
+    <title>Laravel</title>
 
-        <x-portfolio.path>altohami/skills</x-portfolio.path>
-        <x-portfolio.skills>
-            @foreach ($skills as $item)
-                <x-portfolio.skills-item>{{ $item }}</x-portfolio.skills-item>
-            @endforeach
-        </x-portfolio.skills>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    {{-- <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" /> --}}
 
-        {{-- <x-portfolio.path>cd altohami/experience</x-portfolio.path> --}}
-        <x-portfolio.path>altohami/experience</x-portfolio.path>
-        <x-portfolio.experience title="Laravel Developer" company="الجمعية الخيرية الإلكترونية لتحفيظ القرآن الكريم"
-            start-date="2021/3/1" end-date="*">
-            laravel developer and other tasks
-        </x-portfolio.experience>
-        <x-portfolio.experience title="Developer" company="University of Science and Technology" start-date="2021/3/1"
-            end-date="2021/8/1">
-            Participated in developing the academic system
-            of the University of Science & Technology, Adding
-            new updates to the system which resulted
-            in facilitating the user experience.
-        </x-portfolio.experience>
-        <x-portfolio.experience title="Termintion Network" company="Ayman Merckani for Computer Services · Apprenticeship"
-            start-date="2021/2/1" end-date="2021/4/1">
-            Networking and Termintion Network
-        </x-portfolio.experience>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <x-portfolio.path>altohami/contact</x-portfolio.path>
-        <x-portfolio.contact title="Email">altohami360@gmail.com</x-portfolio.contact>
-        <x-portfolio.contact title="Linkedin">https://linkedin.com/in/altohami360</x-portfolio.contact>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Marhey:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <style>
+        * {
+            /* font-family: 'Cairo', sans-serif; */
+            /* font-family: 'Marhey', sans-serif; */
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
 
-        <x-portfolio.path class="animate-ping"> | </x-portfolio.path>
+<body class="antialiased dark">
+    <div
+        class="relative flex justify-center items-center min-h-screen bg-center bg-gray-900 selection:bg-red-500 selection:text-white">
+
+        <div class="max-w-5xl mx-auto p-6 lg:p-8 sm:p-2 w-full">
+            <div class="flex justify-center p-4 w-full flex justify-center">
+                <div class="mx-2" dir="rtl">
+                    <h1 class="tracking-widest uppercase text-white text-md sm:text-md md:text-3xl lg:text-4xl pb-2">
+                        Mo Altohami
+                    </h1>
+                    <h3 class="tracking-wider text-gray-300 text-xs sm:text-xs md:text-base lg:text-xl">
+                        Software Enginner <br><span>(Laravel Framwork)</span>
+                    </h3>
+                </div>
+                <div class=" border border-white bg-gray-900"></div>
+                <div class="mx-2" dir="ltr">
+                    <h1 class="tracking-widest uppercase text-white text-md sm:text-md md:text-3xl lg:text-4xl pb-2">
+                        محمد التهامي
+                    </h1>
+                    <h3 class="tracking-wider text-gray-300 text-xs sm:text-xs md:text-base lg:text-xl">
+                        مطور برمجيات <br><span>(إطار عمل لارافيل)</span>
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="flex justify-center mt-8 px-0 sm:items-center sm:justify-center">
+                <div class="ml-4 text-center text-md text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
+                    <a href="https://www.linkedin.com/in/altohami360/" class="mx-2">LinkedIn</a>
+                    <a href="mailto:altohami360@gmail.com" class="mx-2">Email</a>
+                    <a href="tel:+966564102154" class="mx-2">Phone</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-@endsection
+</body>
+
+</html>
