@@ -9,10 +9,41 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $user = User::with('education')->first();
+        $user = [
+            'name' => 'Mohammed Altohami',
+            'email' => 'altohami360@gmail.com',
+            'about' => 'A talented software developer with experience in developing backend using Html, CSS, PHP, MySql, Laravel, and other. recognized for strong problem-solving skills, Self-study, and time management. graduated from the Faculty of Computer Science Department of Information and Communications Technology (ICT) with a very good grad',
+            'education' => [
+                'user_id' => 1,
+                'degree' => 'Bachelor\'s degree',
+                'school' => 'University of Science and Technology',
+                'collage' => 'Computer Science',
+                'department' => 'Information and Communications Technology (ICT)',
+                'start_at' => '10/2016',
+                'end_at' => '03/2021',
+            ]
+        ];
+
         $skills = ['Web Development', 'DataBase', 'PHP', 'SQL', 'RESTfull API', 'laravel'];
-        $education = User::with('education')->first();
+
+        $degree = 'Bachelor\'s degree';
+        $school = 'University of Science and Technology';
+        $collage = 'Computer Science';
+        $department = 'Information and Communications Technology (ICT)';
+        $start_at = '10/2016';
+        $end_at = '03/2021';
+
         $skills = ['Web Development', 'laravel', 'PHP', 'Databases (MySql)', 'RESTfull API'];
-        return view('welcome');
+
+        return view('welcome', compact(
+            'user',
+            'skills',
+            'degree',
+            'school',
+            'collage',
+            'department',
+            'start_at',
+            'end_at'
+        ));
     }
 }

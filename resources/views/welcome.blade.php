@@ -4,15 +4,13 @@
     <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
         <x-portfolio.path>altohami/about</x-portfolio.path>
         <x-portfolio.about :image="asset('logo.png')">
-            {{ $user->about }}
+            {{ $user['about'] }}
         </x-portfolio.about>
 
-        @foreach ($user->education as $item)
-            <x-portfolio.path>altohami/education</x-portfolio.path>
-            <x-portfolio.education :school="$item->school" :start="$item->start_at" :end="$item->end_at">
-                {{ $item->collage }} - {{ $item->department }}
-            </x-portfolio.education>
-        @endforeach
+        <x-portfolio.path>altohami/education</x-portfolio.path>
+        <x-portfolio.education :school="$school" :start="$start_at" :end="$end_at">
+            {{ $collage }} - {{ $department }}
+        </x-portfolio.education>
 
         <x-portfolio.path>altohami/skills</x-portfolio.path>
         <x-portfolio.skills>
@@ -33,10 +31,6 @@
             of the University of Science & Technology, Adding
             new updates to the system which resulted
             in facilitating the user experience.
-        </x-portfolio.experience>
-        <x-portfolio.experience title="Termintion Network" company="Ayman Merckani for Computer Services · Apprenticeship"
-            start-date="2021/2/1" end-date="2021/4/1">
-            Networking and Termintion Network
         </x-portfolio.experience>
 
         <x-portfolio.path>altohami/contact</x-portfolio.path>
