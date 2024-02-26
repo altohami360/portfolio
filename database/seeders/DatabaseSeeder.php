@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Education;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +25,18 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class
+        ]);
+
+
+
+        Education::create([
+            'user_id' => 1,
+            'degree' => 'Bachelor\'s degree',
+            'school' => 'University of Science and Technology',
+            'collage' => 'Computer Science',
+            'department' => 'Information and Communications Technology (ICT)',
+            'start_at' => '10/2016',
+            'end_at' => '03/2021',
         ]);
     }
 }
