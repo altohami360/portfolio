@@ -1,7 +1,8 @@
 <div>
     <div>
         <figure class="w-full my-4">
-            <img class="h-auto lg:max-w-2xl sm:max-w-auto rounded-lg" src="{{ $image }}"
+            <img class="h-auto lg:max-w-2xl sm:max-w-auto rounded-lg"
+                src="https://raw.githubusercontent.com/altohami360/portfolio/14bb1c81ed83d0921e7b3515a1cea15f07b30deb/public/logo.png"
                 alt="image description">
         </figure>
     </div>

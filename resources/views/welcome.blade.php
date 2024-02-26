@@ -3,7 +3,7 @@
 @section('content')
     <div class="delay-400 w-full min:h-screen h-auto border border-dashed border-3 border-yellow-500 rounded py-4 px-6">
         <x-portfolio.path>altohami/about</x-portfolio.path>
-        <x-portfolio.about :image="asset('logo.png')">
+        <x-portfolio.about>
             {{ $user['about'] }}
         </x-portfolio.about>
 
