@@ -36,6 +36,7 @@
         <x-portfolio.path>altohami/contact</x-portfolio.path>
         <x-portfolio.contact title="Email">altohami360@gmail.com</x-portfolio.contact>
         <x-portfolio.contact title="Linkedin">https://linkedin.com/in/altohami360</x-portfolio.contact>
+        <x-portfolio.contact title="Github">https://github.com/altohami360</x-portfolio.contact>
 
         <x-portfolio.path class="animate-ping"> | </x-portfolio.path>
     </div>
