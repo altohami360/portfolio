@@ -12,7 +12,7 @@ class HomeController extends Controller
         $user = [
             'name' => 'Mohammed Altohami',
             'email' => 'altohami360@gmail.com',
-            'about' => 'A talented software developer with experience in developing backend using PHP, MySql, Laravel, and other. recognized for strong problem-solving skills, Self-study, and time management. graduated from the Faculty of Computer Science Department of Information and Communications Technology (ICT). And I like making software ❤️.',
+            'about' => 'A skilled and hardworking software engineer. And I like making software ❤️.',
             'education' => [
                 'user_id' => 1,
                 'degree' => 'Bachelor\'s degree',
