@@ -13,9 +13,10 @@
     <meta property='og:image:width' content='500' />
     <meta property='og:image:height' content='600' />
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <title>Mohammed Altohami</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
