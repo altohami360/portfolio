@@ -9,10 +9,14 @@ class HomeController extends Controller
 {
     public function index()
     {
+
+        // echo '<br> last line';
+        // die();
+
         $user = [
             'name' => 'Mohammed Altohami',
             'email' => 'altohami360@gmail.com',
-            'about' => 'A skilled and hardworking software engineer. And I like making software ❤️.',
+            'about' => 'A talented software developer with 3 years of experience in developing backend using PHP, MySql, Laravel, PHPUnit Test, and other technology. A skilled and hardworking software engineer. And I like making software ❤️.',
             'education' => [
                 'user_id' => 1,
                 'degree' => 'Bachelor\'s degree',
