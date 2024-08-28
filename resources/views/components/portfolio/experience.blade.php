@@ -1,4 +1,4 @@
-<div class="px-6 py-2 lg:w-1/2 md:w-2/3 sm:w-full">
+<div class="px-6 py-2 w-full">
 
     <div class="flex">
         <span class="text-blue-400 text-sm">{{ $startDate }}</span>
