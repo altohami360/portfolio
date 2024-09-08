@@ -162,13 +162,13 @@
                     code with 3 years of experience in developing backend.
                     I have a Bachelor's degree in Computer Science, Department of Information and Communication
                     Technology (ICT).
-                    <br>
-                    <br>
-                    One of the most important things is write clear code and maintainable all this for developer
-                    experience
-                    and love the code for all the right
-                </p>
-                <a href="" class="text-md text-blue-700 underline">Download CV</a>
+{{--                    <br>--}}
+{{--                    <br>--}}
+{{--                    One of the most important things is write clear code and maintainable all this for developer--}}
+{{--                    experience--}}
+{{--                    and love the code for all the right--}}
+{{--                </p>--}}
+{{--                <a href="" class="text-md text-blue-700 underline">Download CV</a>--}}
             </div>
             <div class="my-16 text-left mx-auto">
                 <span class="flex items-center my-6">
