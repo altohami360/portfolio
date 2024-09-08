@@ -209,13 +209,13 @@
                 </span>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
                     <div>
-                        <img class="h-auto max-w-full rounded" src="{{ asset('me-s.jpg') }}" alt="">
+                        <img class="h-auto max-w-full rounded" src="{{ asset('public/me-s.jpg') }}" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded" src="{{ asset('me-setup.jpg') }}" alt="">
+                        <img class="h-auto max-w-full rounded" src="{{ asset('public/me-setup.jpg') }}" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded" src="{{ asset('me-camping.jpg') }}" alt="">
+                        <img class="h-auto max-w-full rounded" src="{{ asset('public/me-camping.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -230,78 +230,78 @@
                 <div class="relative flex overflow-x-hidden">
                     <div class="py-2 animate-marquee whitespace-nowrap flex">
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('html.svg') }}">
+                            <img src="{{ asset('public/html.svg') }}">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('css.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/css.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('js.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/js.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('jquery.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/jquery.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('php.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/php.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('laravel.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/laravel.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('mysql.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/mysql.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('redis.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/redis.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('git.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/git.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('github.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/github.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('bitbucket.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/bitbucket.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('api.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/api.svg') }}" width="100" height="100">
                         </span>
                     </div>
                     <div class="absolute top-0 py-2 animate-marquee2 whitespace-nowrap flex">
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('jquery.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/jquery.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('html.svg') }}">
+                            <img src="{{ asset('public/html.svg') }}">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('css.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/css.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('js.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/js.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('php.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/php.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('laravel.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/laravel.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('mysql.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/mysql.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('redis.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/redis.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('git.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/git.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('github.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/github.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('bitbucket.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/bitbucket.svg') }}" width="100" height="100">
                         </span>
                         <span class="text-2xl mx-4 bg-white p-1 rounded w-10">
-                            <img src="{{ asset('api.svg') }}" width="100" height="100">
+                            <img src="{{ asset('public/api.svg') }}" width="100" height="100">
                         </span>
                     </div>
                 </div>
