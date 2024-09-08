@@ -2,52 +2,35 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\VisitorLocation;
+use Stevebauman\Location\Facades\Location;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        $location = Location::get('176.44.126.83')->toArray();
 
-        // echo '<br> last line';
-        // die();
+        VisitorLocation::create([
+            'ip' => $location['ip'],
+            'driver' => $location['driver'],
+            'country_name' => $location['countryName'],
+            'currency_code' => $location['currencyCode'],
+            'country_code' => $location['countryCode'],
+            'region_code' => $location['regionCode'],
+            'region_name' => $location['regionName'],
+            'city_name' => $location['cityName'],
+            'zip_code' => $location['zipCode'],
+            'iso_code' => $location['isoCode'],
+            'postal_code' => $location['postalCode'],
+            'latitude' => $location['latitude'],
+            'longitude' => $location['longitude'],
+            'metro_code' => $location['metroCode'],
+            'area_code' => $location['areaCode'],
+            'timezone' => $location['timezone']
+        ]);
 
-        $user = [
-            'name' => 'Mohammed Altohami',
-            'email' => 'altohami360@gmail.com',
-            'about' => 'A talented software developer with 3 years of experience in developing backend using PHP, MySql, Laravel, PHPUnit Test, and other technology. A skilled and hardworking software engineer. And I like making software ❤️.',
-            'education' => [
-                'user_id' => 1,
-                'degree' => 'Bachelor\'s degree',
-                'school' => 'University of Science and Technology',
-                'collage' => 'Computer Science',
-                'department' => 'Information and Communications Technology (ICT)',
-                'start_at' => '10/2016',
-                'end_at' => '03/2021',
-            ]
-        ];
-
-        $skills = ['Web Development', 'DataBase', 'PHP', 'SQL', 'RESTfull API', 'laravel'];
-
-        $degree = 'Bachelor\'s degree';
-        $school = 'University of Science and Technology';
-        $collage = 'Computer Science';
-        $department = 'Information and Communications Technology (ICT)';
-        $start_at = '10/2016';
-        $end_at = '03/2021';
-
-        $skills = ['Web Development', 'laravel', 'PHP', 'Databases (MySql)', 'RESTfull API'];
-
-        return view('welcome', compact(
-            'user',
-            'skills',
-            'degree',
-            'school',
-            'collage',
-            'department',
-            'start_at',
-            'end_at'
-        ));
+        return view('welcome');
     }
 }
