@@ -31,6 +31,6 @@ class HomeController extends Controller
             'timezone' => $location['timezone']
         ]);
 
-        return view('welcome');
+        return view('main');
     }
 }
