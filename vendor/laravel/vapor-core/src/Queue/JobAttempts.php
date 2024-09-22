@@ -87,7 +87,7 @@ class JobAttempts
      * Forget the number of times the job has been attempted.
      *
      * @param  \Illuminate\Contracts\Queue\Job|string  $job
-     * @return int
+     * @return null
      */
     public function forget($job)
     {
@@ -104,6 +104,6 @@ class JobAttempts
     {
         $jobId = $job instanceof Job ? $job->getJobId() : $job;
 
-        return 'laravel_vapor_job_attemps:'.$jobId;
+        return 'laravel_vapor_job_attempts:'.$jobId;
     }
 }

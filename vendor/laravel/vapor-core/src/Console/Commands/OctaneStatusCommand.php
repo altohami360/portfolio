@@ -23,21 +23,21 @@ class OctaneStatusCommand extends Command
     /**
      * Handle the command.
      *
-     * @return int
+     * @return void
      */
     public function handle()
     {
-        $this->isEnviromentRunningOnOctane()
+        $this->isEnvironmentRunningOnOctane()
             ? $this->info('Octane server is running.')
             : $this->info('Octane server is not running.');
     }
 
     /**
-     * Determine if the enviroment is running on Octane.
+     * Determine if the environment is running on Octane.
      *
      * @return bool
      */
-    protected function isEnviromentRunningOnOctane()
+    protected function isEnvironmentRunningOnOctane()
     {
         return isset($_ENV['OCTANE_DATABASE_SESSION_TTL']);
     }

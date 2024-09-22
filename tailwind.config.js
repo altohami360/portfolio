@@ -13,11 +13,8 @@ module.exports = {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
-            backgroundImage: {
-                'bg-image': "https://512pixels.net/downloads/macos-wallpapers-6k/10-7-6k.jpg",
-            }
-        }
-    }
+        },
+    },
 
-    // plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms')],
 };

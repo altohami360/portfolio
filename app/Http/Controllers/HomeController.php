@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        $location = Location::get($request->ip())->toArray();
+        $location = Location::get('176.44.126.83')->toArray();
 
         VisitorLocation::create([
             'ip' => $location['ip'],
