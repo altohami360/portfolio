@@ -5,10 +5,8 @@
 
             <x-nav-bar></x-nav-bar>
 
-
             <div class="text-center">
                 <div class="w-full mx-auto">
-
 
                     <div class="flex justify-between">
                         <h1 class="arabic bg-white bg-clip-text text-4xl leading-[4rem] tracking-tighter text-transparent mb-6">
