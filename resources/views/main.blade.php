@@ -20,7 +20,7 @@
     <style>
         @font-face {
             font-family: "sfmono";
-            src: url({{ asset('storage/fonts/sf-mono/SFMonoRegular.otf') }});
+            src: url({{ asset('assets/fonts/sf-mono/SFMonoRegular.otf') }});
         }
 
         .username-font {
@@ -173,7 +173,7 @@
                     </div>
 
                     <div class="w-3/2 mx-2 max-w-sm flex justify-center md:justify-end mb-4 md:mb-0">
-                        <img class="rounded-3xl w-2/3" src="{{ asset('storage/me-setup.jpg') }}" alt="">
+                        <img class="rounded-3xl w-2/3" src="{{ asset('assets/me-setup.jpg') }}" alt="">
                     </div>
                 </div>
 
@@ -199,41 +199,41 @@
             <div class="my-16 text-right mx-auto flex flex-col items-center">
                 <div class="flex mb-4">
         <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 hidden md:block {{ $animation }}">
-            <img src="{{ asset('storage/bootstrap.png') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/bootstrap.png') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span
                         class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }} flex items-center">
-            <img src="{{ asset('storage/tailwindcss.png') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/tailwindcss.png') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('html.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/html.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('css.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/css.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('js.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/js.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                 </div>
 
                 <div class="flex mb-4">
         <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 hidden md:block {{ $animation }}">
-            <img src="{{ asset('jquery.svg') }}" width="100" height="100" class="mx-auto">
+            <img src="{{ asset('assets/jquery.svg') }}" width="100" height="100" class="mx-auto">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('php.svg') }}" width="100" height="100" class="mx-auto">
+            <img src="{{ asset('assets/php.svg') }}" width="100" height="100" class="mx-auto">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('laravel.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/laravel.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('mysql.svg') }}" width="100" height="100" class="mx-auto">
+            <img src="{{ asset('assets/mysql.svg') }}" width="100" height="100" class="mx-auto">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('redis.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/redis.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('git.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/git.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                 </div>
 
@@ -242,25 +242,25 @@
             <img src="https://placehold.co/400x400/png" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('storage/nodejs.png') }}" width="100" height="100" class="mx-auto">
+            <img src="{{ asset('assets/nodejs.png') }}" width="100" height="100" class="mx-auto">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('github.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/github.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('bitbucket.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/bitbucket.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('api.svg') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/api.svg') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                 </div>
 
                 <div class="flex mb-4 block md:hidden">
         <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('storage/nodejs.png') }}" width="100" height="100" class="mx-auto p-2">
+            <img src="{{ asset('assets/storage/nodejs.png') }}" width="100" height="100" class="mx-auto p-2">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
-            <img src="{{ asset('jquery.svg') }}" width="100" height="100" class="mx-auto">
+            <img src="{{ asset('assets/jquery.svg') }}" width="100" height="100" class="mx-auto">
         </span>
                     <span class="text-2xl mx-2 md:mx-4 bg-white p-1 rounded-full w-14 md:w-16 {{ $animation }}">
             <img src="https://placehold.co/400x400/png" width="100" height="100" class="mx-auto p-2">
@@ -305,17 +305,17 @@
                     <div class="overflow-hidden rounded-xl">
                         <img
                             class="h-auto max-w-full rounded transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  opacity-30 hover:opacity-100"
-                            src="{{ asset('me-s.jpg') }}" alt="">
+                            src="{{ asset('assets/me-s.jpg') }}" alt="">
                     </div>
                     <div class="overflow-hidden rounded-xl">
                         <img
                             class="h-auto max-w-full rounded transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  opacity-30 hover:opacity-100"
-                            src="{{ asset('me-setup.jpg') }}" alt="">
+                            src="{{ asset('assets/me-setup.jpg') }}" alt="">
                     </div>
                     <div class="overflow-hidden rounded-xl">
                         <img
                             class="h-auto max-w-full rounded transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300  opacity-30 hover:opacity-100"
-                            src="{{ asset('me-camping.jpg') }}" alt="">
+                            src="{{ asset('assets/me-camping.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
